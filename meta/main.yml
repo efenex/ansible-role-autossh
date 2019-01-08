@@ -16,4 +16,5 @@ galaxy_info:
     - ssh
     - tunnel
 dependencies:
-    - geerlingguy.repo-epel
+    - role: geerlingguy.repo-epel
+      when: ansible_os_family == 'RedHat'
